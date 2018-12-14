@@ -1,0 +1,10 @@
+﻿{
+    "ios": {
+        "certfilename": "certfilename.p12",
+        "certpass": "123456"
+    },
+    "android": {
+        "fcmurl": "https://fcm.googleapis.com/fcm/send",
+        "apikey": "sOmeKeY123"
+    }
+}

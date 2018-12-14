@@ -65,7 +65,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Enums\DeviceType.cs" />
     <Compile Include="Interfaces\IPushService.cs" />
     <Compile Include="Interfaces\ISender.cs" />

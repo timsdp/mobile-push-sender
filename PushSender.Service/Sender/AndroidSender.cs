@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using PushSender.Service.Interfaces;
 using PushSender.Service.Service;
 using PushSharp.Core;
@@ -109,8 +110,8 @@ namespace PushSender.Service.Sender
                     RegistrationIds = new List<string> {
             regId
         },
-                    Data = JObject.Parse("{ \"somekey\" : \"somevalue\" }"),
-                    
+                    //Data = JObject.Parse("{ \"somekey\" : \"somevalue\" }"),
+                    Notification = JObject.Parse($"{{ \"title\" : \"title\", \"body\" : \"{message}\"}}"),
                 });
             }
 
